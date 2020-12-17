@@ -1,0 +1,15 @@
+@define-mixin smallUp {
+  @media only screen and (min-width:530px){
+    @mixin-content;
+  }
+}
+@define-mixin mediumUp {
+  @media only screen and (min-width:800px){
+    @mixin-content;
+  }
+}
+@define-mixin largeUp {
+  @media only screen and (min-width:1200px){
+    @mixin-content;
+  }
+}
