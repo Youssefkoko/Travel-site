@@ -13,8 +13,16 @@ module.exports = {
     filename: 'bundled.js',
     path: path.resolve(__dirname, 'app')
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'app'),
+    hot: true,
+    port: 3000,
+    before: function(app, server){
+      server._watch('./app/**/*.html')
+    },
+    host: 'x.x.x.x.xIP',
+  },
   mode: 'development',
-  watch: true,
   module: {
     rules: [
       {
