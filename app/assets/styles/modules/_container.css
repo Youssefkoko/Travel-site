@@ -2,4 +2,10 @@
   padding: 0px 25px;
   max-width: 1200px;
   margin: auto;
+  &--medium {
+    max-width: 976px;
+  }
+  .container{
+    padding: 0px 0px;
+  }
 }
