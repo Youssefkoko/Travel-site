@@ -21,7 +21,7 @@ module.exports = {
     before: function(app, server){
       server._watch('./app/**/*.html')
     },
-    host: 'x.x.x.xx.xIP',
+    host: '',
   },
   mode: 'development',
   module: {
@@ -34,6 +34,6 @@ module.exports = {
 
         ],
       }
-    ]
+    ] 
   }
 }
